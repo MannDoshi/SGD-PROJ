@@ -1,0 +1,32 @@
+#footer{
+    background-color: black;
+    opacity: 95%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+#ftext{
+    color:rgb(207, 193, 193);
+}
+.fheading{
+    font-weight:600;
+    color:rgb(163, 158, 158);
+    text-align: center;
+}
+.flink {
+    text-decoration:none;
+    color: white;
+}
+.flink:hover{
+    text-decoration: underline;
+}
+.fmediaicon:hover{
+    color:white;
+}
+.ficon:hover{
+    color:white;
+}
+ul li{
+    list-style-type: none;
+}

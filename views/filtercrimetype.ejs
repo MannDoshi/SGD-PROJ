@@ -1,0 +1,25 @@
+<%- include ("./partials/header.ejs")%>
+
+
+<table>
+    <thead>
+        <tr>
+            <td>Disctict Code</td>
+            <td>Count</td>
+        </tr>
+    </thead>
+    <tbody>
+        <% for(let i=0;i<districts.length;i++) {%>
+        <tr>
+            <td><%= districts[i].category %></td>
+            <td><%= count[i].count %></td>
+        </tr>
+        <% } %>
+    </tbody>
+</table>
+
+
+ 
+<script src="/scripts/filtercrimetype.js"></script>
+
+<%- include("./partials/footer.ejs")%>

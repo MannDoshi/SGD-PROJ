@@ -1,0 +1,1 @@
+//console.log(record._fields[0].properties);
