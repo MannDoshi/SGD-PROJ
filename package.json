@@ -17,6 +17,7 @@
     "express": "^4.17.1",
     "express-session": "^1.17.2",
     "neo4j-driver": "^4.4.1",
+    "nodemon": "^2.0.15",
     "path": "^0.12.7",
     "url": "^0.11.0"
   }

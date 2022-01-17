@@ -10,5 +10,5 @@ tiles.addTo(mymap);
 
 for(let i=0;i<cases.length;i++){
     marker = new L.marker([cases[i].lat,cases[i].long]);
-    marker.bindPopup('Hi' + cases[i].id.low).addTo(mymap);
+    marker.bindPopup(cases[i].id).addTo(mymap);
 }

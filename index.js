@@ -48,7 +48,7 @@ app.post('/filtercrimes',async (req,res)=>{
     var month = req.body.month;
     var day = req.body.day;
     var crimetype = req.body.crimetype;
-    var category = JSON.stringify(req.body.category);
+    var category = req.body.category;
     var district = req.body.district;
     let count = 0;
     var query = '';
@@ -206,6 +206,7 @@ app.post('/filtercrimetype', async (req,res)=>{
     .catch(function(err){
         console.log(err);
     })
+        
     await session
     .run(`MATCH (c:Category{name:'${crimetype}'})<-[:TYPE_OF]-(xc:Cases)-[:AT]->(p:Place)
         RETURN COUNT(xc), p.district
